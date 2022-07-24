@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 40px 0 40px 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.nav-item {
+  font-weight: 400;
+}
+
+.active-item {
+  color: #fe5e35;
+  font-weight: 600;
+}
+
+nav [alt="logo"] {
+  height: 40px;
+}
+
+.intro-section {
+  display: flex;
+  margin: 0 60px;
+}
+
+.left-section {
+  max-width: 50%;
+}
+
+.left-section h3 {
+  margin: 10px auto;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.left-section [alt="circles"] {
+  display: inline-block;
+  vertical-align: baseline;
+  height: 40px;
+  margin: 0 5px;
+}
+
+.left-section h1 {
+  font-family: "Fredoka One", sans-serif;
+  font-size: 3.5em;
+  margin: 10px auto;
+}
+
+.sub-headlines {
+  width: 80%;
+  margin: auto;
+}
+
+.sub-headline img {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fe5e35;
+  border-radius: 50%;
+  margin: 0 15px;
+  padding: 5px;
+  height: 25px;
+}
+
+.sub-headline {
+  vertical-align: middle;
+  margin: auto 20px;
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
+.left-section p {
+  margin-top: 30px;
+  font-size: 0.8em;
+  color: grey;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: start;
+  gap: 2em;
+  margin: 30px auto;
+}
+
+.action-btn {
+  padding: 1em 2em;
+  border-radius: 1.5em;
+  background-color: #fe5e35;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.right-section {
+  width: 50%;
+}
+
+.headphone-div {
+  width: fit-content;
+  position: relative;
+  margin: auto;
+}
+
+.headphone-div [alt="headphone"] {
+  height: 350px;
+  margin: auto;
+  z-index: -2;
+}
+
+.discount-content {
+  font-family: "Fredoka One", sans-serif;
+  color: white;
+  position: absolute;
+  top: 230px;
+  left: 10px;
+}
+
+.discount {
+  height: 120px;
+  position: absolute;
+  top: 200px;
+  left: -20px;
+  z-index: 0;
+}
+
+.dots {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  height: 20px;
+  width: 100%;
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.yellow-dot {
+  background-color: #fbd104;
+}
+
+.tomato-dot {
+  background-color: #fe5e35;
+}
+
+.black-dot {
+  background-color: black;
+}
+
+.right-section .action-btn {
+  display: block;
+  margin: 20px auto;
+}
