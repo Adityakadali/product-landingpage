@@ -20,10 +20,30 @@ nav {
 }
 
 .nav-items {
-  display: flex;
+  display: none;
   gap: 2em;
   align-items: center;
   font-size: 1.5em;
+}
+
+.nav-images {
+  display: flex;
+  align-items: center;
+}
+
+nav [alt="menu-button"] {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+@media (min-width: 976px) {
+  .nav-items {
+    display: flex;
+  }
+
+  nav [alt="menu-button"] {
+    display: none;
+  }
 }
 
 .nav-item {
@@ -41,11 +61,16 @@ nav [alt="logo"] {
 
 .intro-section {
   display: flex;
+  flex-direction: column-reverse;
   margin: 0 60px;
 }
-
-.left-section {
-  max-width: 50%;
+@media (min-width: 768px) {
+  .intro-section {
+    flex-direction: row;
+  }
+  .left-section {
+    max-width: 50%;
+  }
 }
 
 .left-section h3 {
@@ -112,8 +137,10 @@ nav [alt="logo"] {
   font-size: 1em;
 }
 
-.right-section {
-  width: 50%;
+@media (min-width: 768px) {
+  .right-section {
+    width: 50%;
+  }
 }
 
 .headphone-div {
